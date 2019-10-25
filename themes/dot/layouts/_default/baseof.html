@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+
+{{ if .IsHome }}
+{{ partial "crypto_head.html" . }}
+{{ else }}
+{{ partial "head.html" . }}
+{{ end }}
+
+<body class="body_02">
+
+{{ if .IsHome }}
+<!--Add Cryptonio theme -->
+
+<!-- Preloader -->
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<!-- Preloader -->
+
+<header id="header-02" class="header">
+  {{ partial "crypto_navigation.html" . }}
+  {{ partial "crypto_header_container.html" . }}
+</header>
+
+{{ partial "crypto_about.html" . }}
+
+{{ partial "crypto_pricing_chart.html" . }}
+
+{{ partial "crypto_multiple_income.html" . }}
+
+{{ partial "crypto_services.html" . }}
+
+{{ partial "crypto_team.html" . }}
+
+{{ partial "crypto_ico_news.html" . }}
+
+{{ partial "crypto_faq.html" . }}
+
+{{ partial "crypto_footer.html" . }}
+
+{{ partial "crypto_js.html" . }}
+
+<!-- End crypto -->
+{{ else }}
+
+<!-- Dot Hugo Theme -->
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="shadow-bottom sticky-top bg-white" style="padding: 13px 0 !important;">
+  <div class="container">
+    {{ partial "navigation.html" . }}
+    <!--{{ partial "crypto_navigation.html" . }}-->
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
+<div id="content">
+  {{- block "main" . }}{{- end }}
+</div>
+{{- partial "footer.html" . -}}
+
+<!-- End Dot Hugo Theme -->
+{{ end }}
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- START NAVBAR -->
+<nav class="navbar navbar-expand-md navbar-light bg-faded cripto_nav">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand" style="color: white" href="{{ .Site.BaseURL }}">
+            {{ $logo:= .Site.Params.logo }}
+            {{ $logoWhite:= .Site.Params.logoWhite }}
+            {{ if (or (eq $logo "") (eq $logoWhite "")) }}
+            {{ .Site.Title }}
+            {{ else }}
+            <img class="img-fluid" src="{{ $logoWhite | absURL }}" alt="{{ .Site.Title }}">
+            {{ end }}
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- dot theme 가져옴 -->
+                <li class="nav-item">
+                    <a data-scroll class="nav-link active" href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+                </li>
+                {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        {{ .Name }}
+                    </a>
+                    <div class="dropdown-menu" >
+                        {{ range .Children }}
+                        <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                        {{ end }}
+                    </div>
+                </li>
+                {{ else }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+        <!--<div class="language">-->
+            <!--&lt;!&ndash; dot theme 가져옴 &ndash;&gt;-->
+            <!--&lt;!&ndash; Language List &ndash;&gt;-->
+            <!--{{- if and .Site.IsMultiLingual }}-->
+            <!--<select id="select-language" onchange="location = this.value;">-->
+                <!--{{ $siteLanguages := .Site.Languages}}-->
+                <!--{{ $pageLang := .Page.Lang}}-->
+                <!--{{ range .Page.AllTranslations }}-->
+                <!--{{ $translation := .}}-->
+                <!--{{ range $siteLanguages }}-->
+                <!--{{ if eq $translation.Lang .Lang }}-->
+                <!--{{ $selected := false }}-->
+                <!--{{ if eq $pageLang .Lang}}-->
+                <!--<option id="{{ $translation.Language }}" value="{{ $translation.URL }}" selected>{{ .LanguageName }}-->
+                <!--</option>-->
+                <!--{{ else }}-->
+                <!--<option id="{{ $translation.Language }}" value="{{ $translation.URL }}">{{ .LanguageName }}</option>-->
+                <!--{{ end }}-->
+                <!--{{ end }}-->
+                <!--{{ end }}-->
+                <!--{{ end }}-->
+            <!--</select>-->
+            <!--{{ end }}-->
+        <!--</div>-->
+    </div>
+</nav>

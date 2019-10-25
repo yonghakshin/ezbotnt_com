@@ -1,0 +1,97 @@
+baseURL = "https://ezbotnt.com/"
+title = "ezbot TNT"
+theme = "dot"
+
+# customize color
+[params]
+primaryColor = "#00008C"
+secondaryColor = "#ffffff"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#ffffff"
+enable=false
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "EzBot-BitMex        TNT"
+  dateFormat = "23 October 2019"
+  home = "Home"
+  # logo is for all page
+  logo = ""
+  # logo white is for homepage logo, you can use colorful logo too...
+  logoWhite = ""
+  copyright = "The ezbot24.com site are Cooperate © [ezbot24](https://ezbot24.com/) 2019."
+
+
+
+    # navigation
+    [Languages.en.menu]
+
+         [[Languages.en.menu.main]]
+          name = "소개페이지"
+          url = "1_intro"
+          weight = 10
+
+         [[Languages.en.menu.main]]
+          name = "설치하기"
+          url = "2_how_to_install"
+          weight = 11
+
+          [[Languages.en.menu.main]]
+          name = "용어 및 기능설정"
+          url = "3_document"
+          weight = 12
+
+          [[Languages.en.menu.main]]
+          name = "설치파일 다운로드"
+          url = "4_install_file"
+          weight = 13
+
+        [[Languages.en.menu.main]]
+          name = "FaQ"
+          url = "faq"
+          weight = 14
+
+
+    # banner
+    [Languages.en.params.banner]
+      title = "EZbot 서비스 사이트 입니다."
+      description = "기본적으로 사용하시기 전에 위의 내용을 다 읽어보시고 설치하시길 바랍니다. "
+      image = "picture/API page.png"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "설치하시기 전에 알아야 하는 정보입니다."
+
+ 
+    # contact
+    [Languages.en.params.contact]
+      title = "이제 설치하는 방법에 대한 설명이 마무리 되었습니다."
+      content = "여기까지 이해가 안되시는 경우 ezbitbot@gmail.com으로 연락주시면 성심성의것 답변드리겠습니다."
+      
+
+    # footer social icon
+    [[Languages.en.socialIcon]]
+      icon = "ti-facebook"
+      linkURL = "#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-twitter-alt"
+      linkURL = "#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-vimeo-alt"
+      linkURL = "#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-instagram"
+      linkURL = "#"
+
+
+

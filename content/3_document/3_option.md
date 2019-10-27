@@ -4,17 +4,25 @@ weight: 20
 pre: "<b>3. </b>"
 ---
 #### EZbot-BitMEX의 옵션 별 상세기능
-- 봇의 옵션은 다음과 같이 5가지 기능을 가지고 있습니다.
+
+
+- Ezbot-BitMEX의 크게 5가지로 나뉩니다.
 
 1. 간편설정: **기본적으로 제공하는 옵션**과 자신이 사용중인 옵션에 대해 저장하여 사용 가능합니다.
+
 2. 포지션 진입설정: 원하는 종목, 포지션 방식, 레버리지 비율, 갭을 선택합니다.
+
 3. 포지션 정리설정: **목표수익률**에 도달하였을때 포지션을 정리하는 방법을 대해 설정합니다.
+
 4. 물타기 설정: 원하는 형태와 반대로 가격이 이동할때 평가 단가를 낮추기 위하여 **물타기**를 설정합니다.
+
 5. 손절매 설정: 청산을 당하지 않기 위해서 **손절**을 하거나 **동적정리** 방법을 설정합니다. 
 
-- 세부 자세한 옵션에 대한 기능은 메뉴얼 참고 부탁드립니다. 
+---
+
+- 세부 자세한 옵션에 대한 기능은 아래 메뉴얼 참고 부탁드립니다. 
 
 
-> [메뉴얼 다운로드](https://github.com/ezbotTNT/ezbotTNT.github.io/raw/develop/content/3_document/3.files/EZ-BitMEX_Manual.pdf)
+> [옵션 설정 메뉴얼 다운로드](https://github.com/ezbotTNT/ezbotTNT.github.io/raw/develop/content/3_document/3.files/EZ-BitMEX_Manual.pdf)
 
 ---

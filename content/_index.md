@@ -5,7 +5,7 @@
 
 BOT이란, 미리 정해진 로직에 의해 매수와 매도를 자동으로 해주는 프로그램을 말합니다. </br>
 암호화폐 시장은 24시간 쉬는 시간 없이 매매가 이뤄지기 때문에 사람이 매 순간 시장에 참여하여 거래를 하는 것은 불가능 합니다.</br>
-하지만 Ez-bitmex 은 프로그램이 동작하는 동안 매 순간 시장을 감시하여 최적의 순간에 매수와 매도를 진행합니다. 
+하지만 Ez-BitMEX 은 프로그램이 동작하는 동안 매 순간 시장을 감시하여 최적의 순간에 매수와 매도를 진행합니다. 
 
 
 <h1>Test</h1>
@@ -24,7 +24,7 @@ BOT이란, 미리 정해진 로직에 의해 매수와 매도를 자동으로 �
 									<h2 class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.55" style="visibility: visible; animation-delay: 1.55s;"><span>EZ BOT</span>의 새로운 봇</h2>
 									<p class="lead color-secondary animated fadeInUp" data-animate="fadeInUp" data-delay="1.65" style="visibility: visible; animation-delay: 1.65s;">베타 서비스</p>
 									<ul class="btns animated fadeInUp" data-animate="fadeInUp" data-delay="1.75" style="visibility: visible; animation-delay: 1.75s;">
-										<li><a href="/BitMEX" target="_blank" class="btn btn-float-lg"><h1>EZBOT-BITMEX</h1></a></li>
+										<li><a href="/BitMEX" target="_blank" class="btn btn-float-lg"><h1>EZBOT-BitMEX</h1></a></li>
 									</ul>
 								</div>
 							</div><!-- .col  -->
@@ -49,7 +49,7 @@ BOT이란, 미리 정해진 로직에 의해 매수와 매도를 자동으로 �
 BOT이란, 미리 정해진 규칙으로 매수와 매도하는 자동 거래 프로그램을 말합니다. 
 
 암호 화폐 시장은 24시간 쉬는 시간 없이 매매가 이뤄지기 때문에 사람이 매 순간 시장에 참여하여 거래를 하는 것은 불가능 합니다.</br>
-하지만 EZ-BITMEX 은 프로그램이 동작하는 동안 매 순간 시장을 감시하여 최적의 순간에 매수와 매도를 진행합니다. 
+하지만 EZ-BitMEX 은 프로그램이 동작하는 동안 매 순간 시장을 감시하여 최적의 순간에 매수와 매도를 진행합니다. 
 
 ## 이 프로그램은 무엇을 하나요?
 
